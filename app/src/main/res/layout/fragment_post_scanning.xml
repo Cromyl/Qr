@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostScanningFragment">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:layout_weight="2">
+
+            <!-- TODO: Update blank fragment layout -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="212dp"
+                    android:background="#9FBBE3DD"
+                    android:paddingBottom="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#072CFA"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/headingImg"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <ImageView
+                        android:id="@+id/headingImg"
+                        android:layout_width="35dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="24dp"
+                        android:src="@drawable/ic_baseline_link_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/heading"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/heading"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="here the url or the text goes"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.108"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/heading"
+                        app:layout_constraintVertical_bias="0.108" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:background="@drawable/successful"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Scanned Successfully :)"
+                    android:textColor="#B803D6"
+                    android:textSize="48sp"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.166" />
+
+                <ImageButton
+                    android:id="@+id/search_button"
+                    android:layout_width="121dp"
+                    android:layout_height="121dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/button_bg"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                <ImageButton
+                    android:id="@+id/copy_button"
+                    android:layout_width="121dp"
+                    android:layout_height="121dp"
+                    android:layout_marginEnd="56dp"
+                    android:background="@drawable/button_bg"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_content_copy_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/search_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/search_button"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/share_button"
+                    android:layout_width="121dp"
+                    android:layout_height="121dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_bg"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_share_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/search_button"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/search_button"
+                    app:layout_constraintTop_toBottomOf="@+id/search_button"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/like_button"
+                    android:layout_width="121dp"
+                    android:layout_height="121dp"
+                    android:background="@drawable/button_bg"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/share_button"
+                    app:layout_constraintEnd_toEndOf="@+id/copy_button"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/copy_button"
+                    app:layout_constraintTop_toTopOf="@+id/share_button"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CAMERA"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
